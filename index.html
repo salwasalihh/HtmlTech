@@ -94,26 +94,67 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Salwa S. Salih</h1>
+            <h1>Salwa S. Salih - Roj institute</h1>
             <p>Learn HTML with interactive examples, practical exercises, and comprehensive tutorials designed for beginners to advanced learners.</p>
             <div class="hero-buttons">
                 <a href="#tutorials" class="btn btn-primary">Start Learning</a>
-                <a href="#quiz" class="btn btn-secondary">Test Your Skills</a>
+                <a href="#quiz" class="btn btn-secondary">Test Your Skills</a>                
                 <a href="arcade.html" class="btn btn-secondary"><i class="fas fa-gamepad"></i> Play Arcade</a>
             </div>
+                <!-- Interactive Examples Section -->
+    <section id="examples" class="examples-section">
+        <div class="container">
+            <h2>Try It Yourself</h2>
+            <p class="section-subtitle">Edit code and see results in real-time</p>
+
+            <div class="code-editor">
+                <div class="editor-header">
+                    <div class="editor-title">HTML Editor</div>
+                    <button class="run-btn" id="runCode">
+                        <i class="fas fa-play"></i> Run Code
+                    </button>
+                </div>
+                <div class="editor-body">
+                    <div class="code-input">
+                        <h4>HTML Code:</h4>
+                        <textarea id="htmlCode" rows="15">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .box { background: #f0f0f0; padding: 20px; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Hello, Learner!</h1>
+    <p>Edit this code and click "Run Code"</p>
+    <div class="box" id="demoBox">
+        Try changing me!
+    </div>
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        function changeText() {
+            document.getElementById('demoBox').innerHTML =
+                'You clicked the button!';
+        }
+    </script>
+</body>
+</html>
+                        </textarea>
+                    </div>
+                    <div class="code-output">
+                        <h4>Output:</h4>
+                        <iframe id="outputFrame"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="hero-code">
-            <pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;My First Page&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;Welcome!&lt;/h1&gt;
-    &lt;p&gt;Start your web journey here.&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+    </section>
         </div>
+
     </section>
 
     <!-- Tutorial Categories Section -->
@@ -393,58 +434,7 @@
         </div>
     </section>
 
-    <!-- Interactive Examples Section -->
-    <section id="examples" class="examples-section">
-        <div class="container">
-            <h2>Try It Yourself</h2>
-            <p class="section-subtitle">Edit code and see results in real-time</p>
 
-            <div class="code-editor">
-                <div class="editor-header">
-                    <div class="editor-title">HTML Editor</div>
-                    <button class="run-btn" id="runCode">
-                        <i class="fas fa-play"></i> Run Code
-                    </button>
-                </div>
-                <div class="editor-body">
-                    <div class="code-input">
-                        <h4>HTML Code:</h4>
-                        <textarea id="htmlCode" rows="15">
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Page</title>
-    <style>
-        body { font-family: Arial; padding: 20px; }
-        .box { background: #f0f0f0; padding: 20px; margin: 10px; }
-    </style>
-</head>
-<body>
-    <h1>Hello, Learner!</h1>
-    <p>Edit this code and click "Run Code"</p>
-    <div class="box" id="demoBox">
-        Try changing me!
-    </div>
-    <button onclick="changeText()">Click Me</button>
-
-    <script>
-        function changeText() {
-            document.getElementById('demoBox').innerHTML =
-                'You clicked the button!';
-        }
-    </script>
-</body>
-</html>
-                        </textarea>
-                    </div>
-                    <div class="code-output">
-                        <h4>Output:</h4>
-                        <iframe id="outputFrame"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Exercises Section -->
     <section id="exercises" class="exercises-section">
